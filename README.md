@@ -21,7 +21,7 @@ This is based largely on an excellent article ([here](https://medium.com/@damesa
 
 1. Install or setup supported python version (I'm using [pyenv](https://github.com/pyenv/pyenv) so I just set the desired version in the project directory):
     ```
-    echo "3.10" > .python-version
+    echo "3.10.6" > .python-version
     ```
 1. Create Python virtual environment to install Airflow along with dependencies
     ```
