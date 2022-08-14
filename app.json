@@ -19,5 +19,6 @@
   },
   "scripts": {
     "postdeploy": "airflow initdb"
-  }
+  },
+  "stack": "heroku-22"
 }
