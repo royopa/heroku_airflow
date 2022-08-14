@@ -21,7 +21,7 @@ This is based largely on an excellent article ([here](https://medium.com/@damesa
 
 1. Install or setup supported python version (I'm using [pyenv](https://github.com/pyenv/pyenv) so I just set the desired version in the project directory):
     ```
-    echo "3.6.4" > .python-version
+    echo "3.10" > .python-version
     ```
 1. Create Python virtual environment to install Airflow along with dependencies
     ```
@@ -62,7 +62,7 @@ This is based largely on an excellent article ([here](https://medium.com/@damesa
 
 1. Heroku uses a `Procfile`, a text file that indicates which command should be used to start code running.  For our initial run we just want to initialize the database, so that's what goes in our `Procfile`:
     ```
-    echo "web: airflow initdb" > Procfile
+    echo "web: airflow db init" > Procfile
     ```
 
 1. Commit once more and deploy to Heroku.  This will build the project on Heroku and run the database initialization command from the Procfile.  
